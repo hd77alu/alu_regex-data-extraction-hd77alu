@@ -1,6 +1,5 @@
 #!/usr/bin/node
-// This Regex will extract URL adress such as: https://www.example.comLinks to an external site.
-// https://subdomain.example.org/pageLinks to an external site..etc.
+// This Regex will extract URL adress such as: https://www.example.comLinks to an external site, https://subdomain.example.org/pageLinks to an external site..etc.
 
   let Sample = 'This is a test sample! filled with random strings like: ABCDEFGHIJKLMNOPQRSTUV >https//myweb.com https://mysite.io https://subdomain.example.org/pageLink https://www.example.com121314'
   let RegexPattern = /https:\/\/[a-z].+\.[a-z]{2,}/gi
@@ -25,7 +24,7 @@
   console.log(Test2)
 //return false because the URL domain must at least finish with two letters.
 
-  let Case3 = 'https:myweb.com'
+  let Case3 = 'httpsmyweb.com'
   let Test3 = RegexPattern.test(Case3)
   console.log(Test3)
-//return false because the (https:) must be followed by at two forword slaches(//).
+//return false because the (https) must be followed by a colon & two forword slaches(//).
