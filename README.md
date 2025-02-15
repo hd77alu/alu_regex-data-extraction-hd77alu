@@ -32,4 +32,4 @@ Here is the list of data types that have been extracted from different strings:
 
 (+): matches one or more of the preceding tokens.
 
-(\):  an escape character to match the expressions that are read as REGEX such as (., $ ...etc).
+(backword escape slash):  an escape character to match the expressions that are read as REGEX such as (., $ ...etc).
