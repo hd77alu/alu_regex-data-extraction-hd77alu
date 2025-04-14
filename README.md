@@ -6,7 +6,7 @@ Here is the list of data types that have been extracted from different strings:
 - Credit card numbers (1234-5678-9101-1213)
 - Currency amounts ($15.99)
 - Hashtags (#Example)
-- HTML tags (/</html/>/)
+- HTML tags (</html/>)
 - URLs (https://www.example.com)
 
 # Setup Instructions
