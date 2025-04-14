@@ -12,11 +12,12 @@ Here is the list of data types that have been extracted from different strings:
 # Setup Instructions
 - clone the repository
 ```
+
 git clone https://github.com/hd77alu/alu_regex-data-extraction-hd77alu
 
 ```
 - Navigate to the repository by using `cd alu_regex-data-extraction-hd77alu`
-- Make sure you have nodejs install `sudo apt install nodejs`
+- Make sure you have nodejs installed `sudo apt install nodejs`
 - **To extract Credit card numbers run**
 ```
 node credit_card-regex.js
