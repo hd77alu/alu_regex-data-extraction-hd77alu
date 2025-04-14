@@ -5,7 +5,7 @@
   let Sample = 'This is a test sample! filled with random numbers like: 007 07959833576 13:00 9000-1221-0021-2020 1234 5678 9012 3456 ABCD_EFGH_IGKL_MNOP 1234567890123456'
   let RegexPattern = /\d{4}[-\s]\d{4}[-\s]\d{4}[-\s]\d{4}/g
   let Result = Sample.match(RegexPattern)
-  console.log(Result)
+  console.log(`Extracted Credit Cards Formats: ${Result}`)
 
 /*
  This Regex will match a Credit Card pattern which must begin with a group of four consecutive digits, followed by
@@ -16,23 +16,28 @@
  [-\s]: matches (-) charcter or (\s) whitespace character.
 */
 
-  let Case1 = 'ABCD-EFGQ-LMNO-PQRS'
-  let Test1 = RegexPattern.test(Case1)
-  console.log(Test1)
-//return false because this is a group of letters not digits.
+function TestCases() {
+	
+	let Case1 = 'ABCD-EFGQ-LMNO-PQRS'
+  	let Test1 = RegexPattern.test(Case1)
+  	console.log(`Test Case(1):(${Case1}) is ${Test1} because they are a group of letters not digits.`)
+//return false.
 
-  let Case2 = 1234567890123456
-  let Test2 = RegexPattern.test(Case2)
-  console.log(Test2)
-//return false because those are just random digits without any relationship.
+  	let Case2 = 1234567890123456
+  	let Test2 = RegexPattern.test(Case2)
+  	console.log(`Test Case(2):(${Case2}) is ${Test2} because those are just random digits without any relationship.`)
+//return false.
 
-  let Case3 = '1234-5678-9012-345'
-  let Test3 = RegexPattern.test(Case3)
-  console.log(Test3)
-//return false because the last digits group isn't complete.
+  	let Case3 = '1234-5678-9012-345'
+  	let Test3 = RegexPattern.test(Case3)
+  	console.log(`Test Case(3):(${Case3}) is ${Test3} because the last digits group isn't complete.`)
+//return false.
 
-  let Case4 = '1234:5678?9012_3456'
-  let Test4 = RegexPattern.test(Case4)
-  console.log(Test4)
-//return false because the digits aren't seprated with (-) or whitespace.
+  	let Case4 = '1234:5678?9012_3456'
+  	let Test4 = RegexPattern.test(Case4)
+  	console.log(`Test Case(4):(${Case4}) is ${Test4} because the digits aren't seprated with (-) or whitespace.`)
+//return false.
 
+}
+
+TestCases()
