@@ -1,5 +1,5 @@
 # Project Overview
-This is a repository to practice Regular expression using the matching & Testing RGEX function in Javascript.
+This is a repository to practice Regular expression using the matching & Testing REGEX functions in JavaScript.
 
 Here is the list of data types that have been extracted from different strings: 
 
