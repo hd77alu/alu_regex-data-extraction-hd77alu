@@ -49,8 +49,8 @@ Test Case(3):(1234-5678-9012-345) is false because the last digits group isn't c
 Test Case(4):(1234:5678?9012_3456) is false because the digits aren't separated with (-) or whitespace.
 ```
 # REGEX Methods
-- (.match) Function to extract the matching patterns from the string.
-- (.test) Function to test the edge cases & undesirable output.
+- (.match) A Function to extract the matching patterns from the string.
+- (.test) A Function to test the edge cases & undesirable output.
 
 # REGEX Flags
 - \g: to match the pattern across the whole string.
